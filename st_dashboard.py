@@ -1,4 +1,4 @@
-################################################ Citi BIKES DASHABOARD #####################################################
+################################################ Citi BIKES DASHBOARD #####################################################
 
 import streamlit as st
 import pandas as pd
@@ -16,7 +16,7 @@ from datetime import datetime as dt
 st.set_page_config(page_title = 'Citi Bikes Strategy Dashboard', layout='wide')
 st.title("Citi Bikes Strategy Dashboard")
 st.markdown("The dashboard will help with the expansion problems Citi Bike currently faces")
-st.markdown("Right now, Citi bikes runs into a situation where customers complain about bikes not being avaibale at certain times. This analysis aims to look at the potential reasons behind this.")
+st.markdown("Right now, Citi bikes runs into a situation where customers complain about bikes not being available at certain times. This analysis aims to look at the potential reasons behind this.")
 
 ########################## Import data ###########################################################################################
 
