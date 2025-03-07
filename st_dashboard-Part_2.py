@@ -152,17 +152,18 @@ elif page == "Recommendations":
     resized_image = myImage.resize((600, 400))
     st.image(resized_image)
 
-    st.markdown("### Our analysis suggests that NY Citi Bike should prioritize the following objectives moving forward:")
+    st.markdown("### Our analysis underscores key areas for improvement in New York Citi Bike’s operations to enhance efficiency, accessibility, and user satisfaction. Moving forward, Citi Bike should prioritize the following strategies:")
 
-    st.markdown("Seasonal Demand Management – Higher temperatures correlate with increased bike trips. To meet demand, stations should maintain full capacity from May through October, while optimizing bike distribution in colder months to minimize operational costs.")
+    st.markdown("**Seasonal Demand Management** – Ridership increases with higher temperatures, peaking from **May through October**. To optimize operations:")
 
-    st.markdown("Monitor weather patterns to anticipate ridership fluctuations.")
+    st.markdown("- Maintain full station capacity during peak months while scaling back inventory by 20-30% in winter to reduce costs without compromising service.")
+    st.markdown("- Monitor weather patterns to anticipate fluctuations and adjust bike availability dynamically.")
+    st.markdown("- Pilot weather-resistant infrastructure to support year-round ridership.")
 
-    st.markdown("Balancing High-Usage Stations – Central and Lower Manhattan stations, such as W 21 St & 6 Ave, West St & Chambers St, and Broadway & W 58 St, frequently experience supply-demand imbalances. To ensure availability, Citi Bike should enhance redistribution efforts and consider dynamic rebalancing strategies.")
+    st.markdown("**Enhancing Station Balancing & Redistribution** - Certain high-traffic stations, particularly in Central and Lower Manhattan (e.g., W 21 St & 6 Ave, West St & Chambers St, and Broadway & W 58 St), frequently experience supply-demand imbalances. To address this:")
+    st.markdown("- Strengthen redistribution efforts and implement dynamic rebalancing strategies.")
+    st.markdown("- Leverage real-time demand forecasting and predictive analytics to optimize bike distribution.")
     
-    st.markdown("Optimizing Popular Locations – Stations along the waterfront and near Central Park see consistently high demand. Expanding bike availability and increasing parking capacity at these locations will enhance accessibility and user satisfaction.")
-
-    st.markdown("")
-
-
-
+    st.markdown("**Expanding High-Demand & Underserved Locations** - Stations along the waterfront and near Central Park consistently see higher usage, while some low-traffic areas remain underutilized. To improve accessibility and network efficiency:")
+    st.markdown("Expand bike availability and parking capacity in high-demand zones.")
+    st.markdown("Reallocate resources to better serve underserved regions and strengthen inter-borough connectivity.")
