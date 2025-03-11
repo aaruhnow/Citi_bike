@@ -109,8 +109,6 @@ elif page == "Most popular stations":
     )
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("Top 20 Bike Stations: The total number of bike rides for the top 20 stations is 298,000")
-
     st.markdown("Most Popular Stations: The most popular station is W 21 St & 6 Ave, recording the highest number of trips (~1,250). Other high-usage stations include West St & Chambers St, Broadway & W 58 St, and 1 Ave & E 60 St, each with over 1,000 trips. The distribution shows that several stations experience heavy ridership, likely in business districts and tourist hubs.")
 
     st.markdown("Popular Locations: Many high-traffic stations are near major avenues (e.g., Broadway, 6th Ave, 1st Ave), suggesting a strong commuter presence. Stations near parks (e.g., Central Park), transit hubs, and busy intersections see consistent usage.")
