@@ -40,8 +40,8 @@ if page == "Intro page":
     st.markdown("#### This dashboard aims at providing helpful insights on the expansion problems Citi Bikes currently faces.")
     st.markdown("Currently, Citi Bike faces challenges with customers reporting bike unavailability at certain times. This analysis aims to address these expansion issues by providing insights into the underlying causes and explores potential factors contributing to the problem. The dashboard is divided into four sections:")
 
-    st.markdown("- Most popular stations")
     st.markdown("- Weather component and bike usage")
+    st.markdown("- Most popular stations")
     st.markdown(" - Interactive map with aggregated bike trips")
     st.markdown(" - Recommendations")
     st.markdown(" - The dropdown menu on the left 'Aspect Selector' will take you to the different aspects of the analysis out team looked at")
