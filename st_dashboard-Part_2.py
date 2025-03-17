@@ -44,7 +44,7 @@ if page == "Intro page":
     st.markdown("- Most popular stations")
     st.markdown(" - Interactive map with aggregated bike trips")
     st.markdown(" - Recommendations")
-    st.markdown(" - The dropdown menu on the left 'Aspect Selector' will take you to the different aspects of the analysis out team looked at")
+    st.markdown("**The 'Aspect Selector' dropdown menu on the left allows you to navigate through the various aspects of the analysis our team examined.**")
 
     myImage = Image.open("Citi_bike_pic_1.jpeg")
     resized_image = myImage.resize((600, 400))
@@ -72,11 +72,26 @@ elif page == "Weather component and bike usage":
     
     st.plotly_chart(fig_2, use_container_width=True)
 
-    st.markdown("Seasonal Trend: Bike usage peaks in summer and drops significantly in colder months.")
+    st.markdown(
+    'Hover over the <span style="color:blue;">Blue</span> line for date/daily bike rides and the <span style="color:red;">Red</span> line for date/average temperatures.',
+    unsafe_allow_html=True
+    )
 
-    st.markdown("Temperature Correlation: There is a clear link between temperature and daily bike trips—lower temperatures lead to lower ridership. This confirms that weather is a primary factor influencing Citi Bike demand")
+    st.markdown("**Key Insights:**")
+    
+    st.markdown("- Seasonal Trend: Bike usage peaks in summer and drops significantly in colder months.")
 
-    st.markdown("Shortage Concern: Bike shortages are more likely during warmer months, roughly from May to October peaking during summer months June-September. ")
+    st.markdown("- Temperature Correlation: There is a clear link between temperature and daily bike trips—lower temperatures lead to lower ridership. This confirms that weather is a primary factor influencing Citi Bike demand")
+
+    st.markdown("- Shortage Concern: Bike shortages are more likely during warmer months, roughly from May to October peaking during summer months June-September. ")
+
+    st.markdown("**Recommendations:**")
+
+    st.markdown("- Scaling back bike availability by 20-30% during winter months to reduce operational costs while maintaining service for regular customers.")
+
+    st.markdown("- Introduce weather-proof strategies, such as promotions and incentives during colder months, to stabilize demand.")
+
+    st.markdown("- Enhancing infrastructure by installing covered bike stations or weather-resistant docks to encourage winter or inclement weather usage.")
 
 ### Most popular stations page (top_20 bar chart)
 
@@ -109,9 +124,29 @@ elif page == "Most popular stations":
     )
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("Most Popular Stations: The most popular station is W 21 St & 6 Ave, recording the highest number of trips (~1,250). Other high-usage stations include West St & Chambers St, Broadway & W 58 St, and 1 Ave & E 60 St, each with over 1,000 trips. The distribution shows that several stations experience heavy ridership, likely in business districts and tourist hubs.")
+    st.markdown(
+    '<span style="color:#E15241;">**Select the Season Filter:**</span> Select one or multiple seasons to filter bike ride data. Click a season to include it; remove it by clicking “X.” Use this to analyze seasonal trends in bike usage.',
+    unsafe_allow_html=True
+    )
 
-    st.markdown("Popular Locations: Many high-traffic stations are near major avenues (e.g., Broadway, 6th Ave, 1st Ave), suggesting a strong commuter presence. Stations near parks (e.g., Central Park), transit hubs, and busy intersections see consistent usage.")
+    st.markdown(
+    'Hover over the <span style="color:#1f77b4;">**Bar Chart**</span> to see the station and number of trips.',
+    unsafe_allow_html=True
+    )
+
+    st.markdown("**Key Insights:**")
+    
+    st.markdown("- Most Popular Stations: The most popular station is W 21 St & 6 Ave, recording the highest number of trips (~1,250). Other high-usage stations include West St & Chambers St, Broadway & W 58 St, and 1 Ave & E 60 St, each with over 1,000 trips. The distribution shows that several stations experience heavy ridership, likely in business districts and tourist hubs.")
+
+    st.markdown("- Popular Locations: Many high-traffic stations are near major avenues (e.g., Broadway, 6th Ave, 1st Ave), suggesting a strong commuter presence. Stations near parks (e.g., Central Park), transit hubs, and busy intersections see consistent usage.")
+
+    st.markdown("**Recommendations:**")
+
+    st.markdown("- Prioritize high-demand stations for bike stocking and maintenance, especially in tourist areas, business districts, and high-density residential zones.")
+
+    st.markdown("- Improve redistribution strategies to prevent shortages at popular stations and overstocking at low-traffic locations.")
+
+    st.markdown("- Optimize future station placement by expanding infrastructure in underserved areas while enhancing existing stations.")
 
 ### Interactive map with aggregated bike trips page (Citi_bike Trips Aggregated)
 
@@ -131,16 +166,23 @@ elif page == "Interactive map with aggregated bike trips":
     st.header("Aggregated Bike Trips in New York")
     st.components.v1.html(html_data,height=800, scrolling=True)
 
-    st.markdown('#### Using the filter on the left hand side of the map, we can check whether the most popular start stations also appear in the most popular trips.')
+    st.markdown("#### By clicking the filter (arrow) in the top left corner of the map, we can check whether the most popular start stations are also among the most frequently used in bike trips.")
     
-    st.markdown("Central and lower Manhattan exhibit the highest trip densities, driven by their commercial significance and popularity among tourists. This trend is evident in the bike route from North Moore St & Greenwich St to Vesey St & Church St, which has recorded 4,523 trips. The starting station in TriBeCa is situated just a four-minute walk from the subway, making it highly accessible for both commuters and visitors in this vibrant neighborhood.")
+    st.markdown("**Key Insights:**")
 
-    st.markdown("The end station at Vesey St & Church St sits near the Hudson River and the One World Observatory, a major landmark in downtown Manhattan. Church Street, despite its relatively short length, serves as a vital north-south corridor in lower Manhattan, experiencing significant traffic from cyclists, pedestrians, and vehicles.")
+    st.markdown("- High-demand zones: Central and Lower Manhattan lead in bike trips due to dense population, commerce, and tourism.")
 
-    st.markdown("Additionally, strong regional connectivity links Manhattan to Jersey City and Brooklyn, reinforcing the demand for cycling infrastructure. Certain key hubs dominate ridership, with some stations exceeding 500 trips, as highlighted by the color intensity in the interactive analysis. In contrast, northern Manhattan and peripheral areas exhibit lower trip activity.")
+    st.markdown("- Inter-borough connectivity: Strong bike traffic links Manhattan to Jersey City and Brooklyn, underscoring the need for optimized infrastructure.")
 
-    st.markdown("With its dense population, high commuter traffic, and proximity to major attractions, the North Moore St & Greenwich St to Vesey St & Church St route is a prime example of how focused analysis can effectively highlight high-demand corridors and station usage patterns.")
+    st.markdown("- Underutilized areas: Northern Manhattan and peripheral zones show lower ridership, pointing to potential service gaps.")
 
+    st.markdown("**Recommendations:**")
+
+    st.markdown("- Strategic station expansion: Identify high-traffic waterfront areas and underserved corridors for new bike stations.")
+
+    st.markdown("- Enhanced connectivity: Improve bike availability at key transit hubs to strengthen inter-borough cycling access.")
+
+#### Conclusions & Recommendations ####
 
 elif page == "Recommendations":
     pass
@@ -164,5 +206,5 @@ elif page == "Recommendations":
     st.markdown("- Leverage real-time demand forecasting and predictive analytics to optimize bike distribution.")
     
     st.markdown("**Expanding High-Demand & Underserved Locations** - Stations along the waterfront and near Central Park consistently see higher usage, while some low-traffic areas remain underutilized. To improve accessibility and network efficiency:")
-    st.markdown("Expand bike availability and parking capacity in high-demand zones.")
-    st.markdown("Reallocate resources to better serve underserved regions and strengthen inter-borough connectivity.")
+    st.markdown("- Expand bike availability and parking capacity in high-demand zones.")
+    st.markdown("- Reallocate resources to better serve underserved regions and strengthen inter-borough connectivity.")
