@@ -1,4 +1,4 @@
-# NYC Bike-Sharing Analysis
+# 🚴 NYC Bike-Sharing Analysis
 
 ## Objective  
 As the lead analyst for a bike-sharing service in New York City, this project aims to analyze user behavior to help the business strategy team optimize bike distribution across the city. By conducting a descriptive analysis of existing data, we seek actionable insights to mitigate availability issues and maintain the company’s leadership in eco-friendly transportation.
