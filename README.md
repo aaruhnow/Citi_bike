@@ -31,10 +31,5 @@ A **Python-powered interactive dashboard** will present key findings, featuring:
 ## Success Factors  
 - Deliver a **clear, interactive dashboard** showcasing all distribution challenges.  
 - Provide **visual insights** into factors affecting demand and bike availability.  
-- Present **strategic recommendations** and actionable next steps for business improvements.  
-
----
-
-### Project Deliverables  
-This project will be structured into exercises, with each step contributing to the final **network visualization** and dashboard.  
-
+- Present **strategic recommendations** and actionable next steps for business improvements.
+  
